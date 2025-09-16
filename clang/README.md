@@ -1,2 +1,3 @@
-# SecureBuffer
+# Secure Buffer
+
 Memory Safety Concepts

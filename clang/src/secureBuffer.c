@@ -1,4 +1,4 @@
-#include "secure_buffer.h"
+#include "secureBuffer.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -19,8 +19,7 @@ int SecureBuffer_init(SecureBuffer *buf, size_t size)
 // Securely clear memory before freeing
 void SecureBuffer_free(SecureBuffer *buf)
 {
-    if (buf && buf->data)
-    {
+    if (buf && buf->data){
         memset(buf->data, 0, buf->size); // wipe memory
         free(buf->data);
         buf->data = NULL;
